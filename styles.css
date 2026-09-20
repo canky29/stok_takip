@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f8f8f7;
+            color: #18181b;
+        }
+        
+        .font-brand {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.08em;
+        }
+        
+        .hidden-role { display: none !important; }
+        
+        /* PATULİ FIRIN Real Facade Dark Header */
+        .patuli-header {
+            background: #09090b;
+            background-image: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 75%);
+            border-bottom: 1px solid #27272a;
+        }
+        
+        /* LED Glow Effect matching store sign */
+        .led-glow {
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.6), 0 0 24px rgba(245, 158, 11, 0.3);
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
+        }
+
+        /* Gauge progress ring animation */
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.6s ease;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        .category-chevron { transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+
+        /* Card Hover Zoom */
+        .card-img-zoom {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .product-card:hover .card-img-zoom {
+            transform: scale(1.08);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f4f4f5; }
+        ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
